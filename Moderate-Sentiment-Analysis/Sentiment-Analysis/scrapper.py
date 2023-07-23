@@ -43,8 +43,23 @@ if __name__ == "__main__":
     text=st.text_input("Capition","")
     if st.button("Predict"):
 
-        result=sentiment.calculatesentiment(text)
+        result = sentiment.calculatesentiment(text)
 
         st.bar_chart(data=result)
-        st.success(max(result))
+
+        # Get the sentiment with the highest probability
+        max_sentiment = max(result, key=result.get)
+
+        # Define button color based on the sentiment with the highest probability
+        button_color = None
+        if max_sentiment == 'positive':
+            button_color = 'lightgreen'
+        elif max_sentiment == 'neutral':
+            button_color = 'yellow'
+        elif max_sentiment == 'negative':
+            button_color = 'tomato'
+
+        # Apply custom CSS to style the button's background color
+        button_style = f"background-color: {button_color}; padding: 0.5rem 1rem; color: black; border-radius: 0.3rem;"
+        st.markdown(f'<button style="{button_style}">{max_sentiment.capitalize()} Sentiment</button>', unsafe_allow_html=True)
 
