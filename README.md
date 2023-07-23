@@ -26,7 +26,7 @@ The task involved developing an AI system capable of performing sentiment analys
 **Reference:**
 The [research paper](https://arxiv.org/pdf/2010.12421.pdf) on sentiment analysis was used as a reference to guide the implementation.
 
-### Hard Problem Statement: Gratitude Assistant using ChatGPT 4
+### Hard Problem Statement: Gratitude Assistant using ChatGPT Models
 
 **Problem Statement Description:**
 The task was to train a ChatGPT model to function as a Gratitude Assistant. The model should generate thoughtful, compassionate, and personalized responses that express gratitude based on the user's input. The model should understand the context of the conversation and generate appropriate gratitude responses.
