@@ -40,11 +40,10 @@ The repository is organized as follows:
 
 ```
 /
-├── Easy-Autocorrect-Suggestion/      (Contains the solution for the Easy Problem Statement)
+├── Easy-Autocorrect-Suggestion/     (Contains the solution for the Easy Problem Statement)
 ├── Moderate-Sentiment-Analysis/     (Contains the solution for the Moderate Problem Statement)
-├── Hard-Gratitude-Assistant/             (Contains the solution for the Hard Problem Statement)
-└── README.md                                (You are here!)
-
+├── Hard-Gratitude-Assistant/        (Contains the solution for the Hard Problem Statement)
+└── README.md                        (You are here!)
 ```
 
 Each sub-folder contains the code, data, and any additional resources required for the respective problem statement.
