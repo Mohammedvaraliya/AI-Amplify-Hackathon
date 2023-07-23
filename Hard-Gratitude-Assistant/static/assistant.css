@@ -1,0 +1,80 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --bg-primary: #343541;
+    --fc-primary: white;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--fc-primary);
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img, svg{
+    display: block;
+}
+
+.container{
+    width: min(90vw, 768px);
+    margin: auto;
+}
+
+.form {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form input {
+    flex:1;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+ 
+    background: #424242;
+    
+}
+
+.text-input{
+    display: flex;
+    width: min(90%, 760px);
+    background: #424242;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0px 2.767256498336792px 2.2138051986694336px 0px rgba(0, 0, 0, 0.02), 0px 6.650102138519287px 5.32008171081543px 0px rgba(0, 0, 0, 0.03), 0px 12.521552085876465px 10.017241477966309px 0px rgba(0, 0, 0, 0.04), 0px 22.3363094329834px 17.869047164916992px 0px rgba(0, 0, 0, 0.04), 0px 41.777610778808594px 33.422088623046875px 0px rgba(0, 0, 0, 0.05), 0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+}
+
+.text-input button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    padding: 0.5rem;
+    margin: 0.75rem;
+    border-radius: 0.5rem;
+    border: tra;
+}
+
+.bot{
+    background-color: #444654;
+}
+
+.user,
+.bot{
+    font-size: 1.5rem;
+    padding: 3rem 0;
+}

@@ -1,0 +1,11 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+
+    <h1>Response</h1>
+    <p><b>Query:</b> {{ query }}</p>
+    <p><b>Response:</b> {{ response }}</p>
+    <a href="{% url 'query' %}">Back to bot</a>
+    
+{% endblock content %}
