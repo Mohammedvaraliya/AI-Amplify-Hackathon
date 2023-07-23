@@ -14,3 +14,41 @@ https://www.geeksforgeeks.org/autocorrector-feature-using-nlp-in-python/
 
 1. Edit distance: Is the number of letters that is required to change a word to another word.
 2. Jaccard distance: is the measure of similarity between the sets.
+
+## Solution Visualization
+
+<table width="100%"> 
+<tr>
+<td width="50%">      
+&nbsp; 
+<br>
+<p align="center">
+  Word : Collection
+</p>
+<img src="https://github.com/Mohammedvaraliya/AI-Amplify-Hackathon/assets/95087498/726a3778-ab08-435e-b93f-ad56b1d4728f">
+</td> 
+<td width="50%">
+<br>
+<p align="center">
+  Word : Section
+</p>
+<img src="https://github.com/Mohammedvaraliya/AI-Amplify-Hackathon/assets/95087498/9d8769dd-1822-404f-b3e5-3524ee6b31cf">
+</td>
+</tr>
+<tr>
+<td width="50%">
+<br>
+<p align="center">
+  Word : Human
+</p>
+<img src="https://github.com/Mohammedvaraliya/AI-Amplify-Hackathon/assets/95087498/4d6863f6-0c8e-4256-aea4-0f13788a509f">
+</td>
+<td width="50%">
+<br>
+<p align="center">
+  Word : Distribution
+</p>
+<img src="https://github.com/Mohammedvaraliya/AI-Amplify-Hackathon/assets/95087498/345d27f1-dbf7-4f6a-abec-bcc625e200d8">
+</td>
+</tr>
+</table>
