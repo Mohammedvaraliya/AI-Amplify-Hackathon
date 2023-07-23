@@ -10,7 +10,7 @@ This repository contains the solutions to three problem statements completed dur
 The task was to develop an AI system capable of providing autocorrect suggestions for English words. The system should recognize misspelled words and suggest the correct spelling. It should handle a wide range of words and common spelling mistakes.
 
 **Solution:**
-The solution for this problem statement is implemented using Natural Language Processing (NLP) in Python. The system employs edit distance and Jaccard distance to calculate the similarity between words and provide relevant suggestions.
+...
 
 **Reference:**
 The [GeeksforGeeks tutorial](https://www.geeksforgeeks.org/autocorrector-feature-using-nlp-in-python/) on autocorrect features using NLP in Python was used as a basis for the implementation.
@@ -21,7 +21,7 @@ The [GeeksforGeeks tutorial](https://www.geeksforgeeks.org/autocorrector-feature
 The task involved developing an AI system capable of performing sentiment analysis on the posts and comments of any given LinkedIn page or post. The system should categorize the text as positive, negative, or neutral and provide an overall sentiment distribution.
 
 **Solution:**
-The solution utilizes existing sentiment analysis algorithms to process the text data from LinkedIn posts and comments. The system is designed to handle a large volume of text and diverse language use, including professional jargon, abbreviations, and emojis.
+...
 
 **Reference:**
 The [research paper](https://arxiv.org/pdf/2010.12421.pdf) on sentiment analysis was used as a reference to guide the implementation.
