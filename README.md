@@ -10,7 +10,7 @@ This repository contains the solutions to three problem statements completed dur
 The task was to develop an AI system capable of providing autocorrect suggestions for English words. The system should recognize misspelled words and suggest the correct spelling. It should handle a wide range of words and common spelling mistakes.
 
 **Solution:**
-...
+For this problem statement, the S2S (Sequence-to-Sequence) model was utilised. It is a form of neural network architecture that can be applied to fix or boost the precision of text that is automatically created. The model creates a corrected output sequence from a potentially incorrect input sequence.
 
 **Reference:**
 The [GeeksforGeeks tutorial](https://www.geeksforgeeks.org/autocorrector-feature-using-nlp-in-python/) on autocorrect features using NLP in Python was used as a basis for the implementation.
@@ -21,7 +21,7 @@ The [GeeksforGeeks tutorial](https://www.geeksforgeeks.org/autocorrector-feature
 The task involved developing an AI system capable of performing sentiment analysis on the posts and comments of any given LinkedIn page or post. The system should categorize the text as positive, negative, or neutral and provide an overall sentiment distribution.
 
 **Solution:**
-To extract sentiment analysis features and categorise the sentiment as positive, negative, or neutral, Hugging Face's pre-trained model was applied. This model was trained on 58 million Twitter tweets. The streamlit library was used to produce the graphical portion of the system and show the findings once the categorization of emotion was extracted. Due to the size of the dataset used for training, the model's prediction accuracy was roughly 99.5%.
+To extract sentiment analysis features and categorise the sentiment as positive, negative, or neutral, Hugging Face's pre-trained model which was based on RoBERTa based on transformers was applied. This model was trained on 58 million Twitter tweets. The streamlit library was used to produce the graphical portion of the system and show the findings once the categorization of emotion was extracted. Due to the size of the dataset used for training, the model's prediction accuracy was roughly 99.5%.
 
 **Reference:**
 The [research paper](https://arxiv.org/pdf/2010.12421.pdf) on sentiment analysis was used as a reference to guide the implementation.
