@@ -21,7 +21,7 @@ The [GeeksforGeeks tutorial](https://www.geeksforgeeks.org/autocorrector-feature
 The task involved developing an AI system capable of performing sentiment analysis on the posts and comments of any given LinkedIn page or post. The system should categorize the text as positive, negative, or neutral and provide an overall sentiment distribution.
 
 **Solution:**
-...
+To extract sentiment analysis features and categorise the sentiment as positive, negative, or neutral, Hugging Face's pre-trained model was applied. This model was trained on 58 million Twitter tweets. The streamlit library was used to produce the graphical portion of the system and show the findings once the categorization of emotion was extracted. Due to the size of the dataset used for training, the model's prediction accuracy was roughly 99.5%.
 
 **Reference:**
 The [research paper](https://arxiv.org/pdf/2010.12421.pdf) on sentiment analysis was used as a reference to guide the implementation.

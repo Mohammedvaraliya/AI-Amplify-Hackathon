@@ -11,7 +11,7 @@ def get_response(prompt):
     response = openai.Completion.create(
       engine="text-davinci-003",
       prompt=prompt,
-      max_tokens=1000
+      max_tokens=2500
     )
     return response.choices[0].text.strip()
 

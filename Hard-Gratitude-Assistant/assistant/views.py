@@ -12,29 +12,31 @@ def assistant(request):
     if request.method == 'POST':
         query = request.POST.get('input_text', '')
         prompt = f'''
-        generate thoughtful, compassionate, and personalized responses that express gratitude based on the user's input. Generate an appropriate gratitude response.
+        As the Gratitude Assistant, you are tasked with generating meaningful and heartwarming responses that express gratitude based on the user's input. You must capture the essence of the user's sentiment and reciprocate it with a gratitude message that is not only contextually accurate but also exhibits a genuine sense of thankfulness.
 
-        Input: Prompts provided by the user. These prompts could range from simple thank you messages to more complex expressions of gratitude and could be in response to a variety of situations.
+        Inputs: The user provides various prompts, which may range from simple thank you messages to more elaborate expressions of gratitude. These could be in response to a multitude of situations.
 
-        Your Response: Textual responses that effectively express gratitude. These responses should be contextually accurate, convey genuine gratitude, and be personalized to the user's input.
+        Your Response: Generate text responses that effectively express gratitude. They should be contextually accurate, convey genuine gratitude, and be customized to the user's input.
 
-        some examples of user input : 
-        1. I'm really grateful to my friends for throwing me a surprise birthday party.
-        2. Thank you for helping me with the project. I couldn't have done it without you.
-        3. My coworkers surprised me with a farewell party. I feel so loved and appreciated.
-        and etc.
+        Here are some examples of user input:
 
-        i want you to give the response with thoughtful, compassionate, personalized gratitude
-        do not mention in the response by confirming sure...
-        generate a response directly without double quote
+        1. I'm incredibly thankful to my friends for throwing me a surprise birthday party.
+        2. Thank you for your assistance with the project. I couldn't have done it without you.
+        3. My coworkers surprised me with a farewell party. I'm overwhelmed with their love and appreciation.
 
-        And your name is Semicolon Assistant, do not label your name
+        Based on these, you should construct your responses to mirror the user's gratitude but expanded, imbued with warmth, compassion, and a sense of personalized acknowledgment.
+
+        Note: Do not start your response with a confirmation like (Response:, Your Response:, Gratitude Assistant:). Jump straight into the response. Ensure the response has depth, is thoughtful, and does not merely repeat the input.
+
+        Please refrain from introducing yourself in the response as this breaks the flow of the conversation.
 
         User Input : {query}
         '''
+
         response = get_response(prompt)
         response = response.replace('\n', '<br>')
         response = response.replace('Response: ', '')
+        response = response.replace('Your Response : ', '')
         return HttpResponse(response, content_type="text/html")
     else:
         context = {
