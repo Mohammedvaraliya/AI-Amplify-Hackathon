@@ -78,3 +78,7 @@ img, svg{
     font-size: 1.5rem;
     padding: 3rem 0;
 }
+
+.bot :last-child{
+    padding-bottom: 4rem;
+}
